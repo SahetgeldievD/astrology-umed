@@ -1,0 +1,303 @@
+body {
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overscroll-behavior: contain;
+    padding-bottom: 50px;
+    height: 100%;
+    overflow: auto;
+    padding-right:0px !important;
+    margin-right:0px !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(13, 12, 24, 0.5)), url('css/back.avif');   
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg {
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+}
+
+
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+
+h2 {
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px grey;
+    font-size: 44px;
+    font-family: serif;
+    letter-spacing: 7px;
+}
+
+h3 {
+    color: bisque;
+    text-shadow: 1px 1px grey;
+    font-size: 38px;
+    font-family: serif;
+    letter-spacing: 6px;
+    margin-left: 10vw;
+}
+
+.header {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+    overflow: hidden;
+    /* animation: moveDown 1.5s ease-in-out; */
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px grey;
+    font-size: 44px;
+    font-family: serif;
+    letter-spacing: 7px;
+    position: relative;
+}
+
+.header span {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 44px;
+    color: #fff;
+    animation: moveDown 1.3s;
+    animation-delay: calc(.2s * var(--i));
+    animation-fill-mode: both;
+  }
+
+
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.top {
+    margin-top: 35px;
+}
+
+button {
+    margin-top: 5px;
+}
+
+.button {
+    background-color: transparent;
+}
+
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+a {
+    text-decoration: none;
+    color: bisque !important;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+a:link {
+    text-decoration: none;
+    color: bisque !important;
+}
+
+a:hover {
+    color: bisque;
+    text-shadow: 2px 2px rgb(141, 141, 141)
+}
+
+
+
+.row {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+
+
+#phaseInfo {
+    color: bisque !important;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+}
+
+
+#mercuryRetrograde {
+    color: bisque !important;
+    margin-left: 55px;
+    margin-right: 55px;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+}
+
+#transitText {
+    background-color: rgba(32, 32, 32, 0.288);
+    border-radius: 10px 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mercurySymbol {
+    margin-bottom: 15px;
+}
+
+
+
+img {
+    width: 120px;
+    height: 120px;
+    display: flex;
+}
+
+
+
+
+@media (min-width: 600px){
+    body {
+        background-position: center;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        margin: 0;
+        overscroll-behavior: contain;
+        margin-bottom: 40px;
+        padding-bottom: 50px;
+        padding-right:0px !important;
+        margin-right:0px !important;
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+    }
+
+    /* .bg {
+        background-attachment: fixed; 
+        background-repeat: no-repeat;
+    } */
+
+
+    h2 {
+        font-size: 100px;
+        color: bisque;
+        text-shadow: 1.4px 1.4px grey;
+        letter-spacing: 10px;
+    }
+
+    h3 {
+        font-size: 60px;
+    }
+
+    .header {
+        margin-top: 40px;
+    }
+
+    .header span {
+        font-size: 100px;
+    }
+
+    .signImg {
+        height: 140px;
+        width: 140px;
+        margin-top: 15px;
+        opacity: 1 !important;
+    }
+
+    .modal {
+        margin-top: 230px;
+        overflow-y: auto;
+        padding-right: 0px !important;
+    }
+
+    .modal-open {
+        overflow: auto;
+        padding-right: 0px !important;
+    }
+
+    .modal-body {
+        font-size: 18px;
+    }
+
+    .date {
+        font-size: 16px;
+        margin-top: 0px;
+    }
+
+    .positions {
+        font-size: 12px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+
+    .row {
+        margin-left: 290px;
+        margin-right: 290px;
+        margin-top: 20px;
+    }
+
+    h5 {
+        color: white;
+    }
+
+
+    #phaseInfo {
+        font-size: 24px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        text-align: right;
+    }
+
+    #mercuryRetrograde {
+        font-size: 24px;
+        margin-bottom: 30px;
+        text-align: right;
+    }
+
+    #mercurySymbol {
+        margin-bottom: 5px;
+    }
+
+
+
+    img {
+        width: 130px;
+        height: 130px;
+    }
+
+
+
+}
