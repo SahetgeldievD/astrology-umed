@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гороскоп</title>
+    <link rel="stylesheet" href="horo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Астрологический совет</h1>
+        <form id="astroForm">
+            <div class="form-group">
+                <label for="firstName">Ваше имя</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="dob">День рождения</label>
+                    <input type="number" id="dob" name="dob" min="1" max="31" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="month">Месяц рождения</label>
+                    <select id="month" name="month" required>
+                        <option value="">Выберите месяц</option>
+                        <option value="January">Январь</option>
+                        <option value="February">Февраль</option>
+                        <option value="March">Март</option>
+                        <option value="April">Апрель</option>
+                        <option value="May">Май</option>
+                        <option value="June">Июнь</option>
+                        <option value="July">Июль</option>
+                        <option value="August">Август</option>
+                        <option value="September">Сентябрь</option>
+                        <option value="October">Откябрь</option>
+                        <option value="November">Ноябрь</option>
+                        <option value="December">Декабрь</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="year">Гор рождения</label>
+                <input type="number" id="year" name="year" required>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">Получить совет</button>
+                <button type="reset" class="reset-btn" id="reset">Сброс</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>  
+
+    <script src="./first.js"></script>
+</body>
+</html>
